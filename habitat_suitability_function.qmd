@@ -1,9 +1,13 @@
 ---
-title: "eds223_hw4"
+title: "California Fisheries Habitat Suitability"
+subtitle: "A function that takes an aquatic species' survivable range of depth and temperature to create a habitat suitability map. Created with aquaculture in mind."
 author: 'Joshua Paul Cohen'
 date: last-modified
 format: html
-editor: visual
+editor: source
+theme: 
+  - cerulean
+  - custom.scss
 ---
 
 In this project, we create a generalized function that receives:
@@ -553,15 +557,15 @@ if (crs(suitability_vec) == crs(eez)){
 
     a.  Convert subsetted EEZ vector to raster.
 
-    ```{r, eval=FALSE}
-    # template raster for rasterizing suitable eez
-    eez_rast_template <- rast(ext(mean_sst_c),
+```{r, eval=FALSE}
+# template raster for rasterizing suitable eez
+eez_rast_template <- rast(ext(mean_sst_c),
                          resolution = res(mean_sst_c),
                          crs = crs(suitable_eez))
 
     # rasterizing suitable eez raster
     suitable_eez_rast <- terra::rasterize(suitable_eez, eez_rast_template, field = 'rgn_id')
-    ```
+```
 
 **Test 5**: Testing match for resolution, CRS, and extent of the suitable EEZ raster with previous objects.
 
@@ -681,7 +685,7 @@ eez_map(species = 'Pacific Geoduck', min_depth = -110, max_depth = 0, min_temp =
 ## Data Citations
 
 | Data | Citation | Link |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | OpenStreetMap from Geofabrik | Fellows I, Stotz utJlbJP (2023). *OpenStreetMap: Access to Open Street Map Raster Images*. R package version 0.4.0, https://CRAN.R-project.org/package=OpenStreetMap | [Link](https://www.openstreetmap.org) |
 | Pacific Geoduck page on SeaLifeBase | Pacific Northwest Shell Club 2014 Pacific Northwest marine molluscan biodiversity. Pacific Northwest Shell Club, www.PNWCS.org. http://www.bily.com/pnwsc/web-content/Northwest%20Marine%20Molluscan%20Biodiversity.html \[Accessed 06/02/2014\]. | [Link](https://www.sealifebase.ca/summary/Panopea-generosa.html) |
 | NOAA’s 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1. | NOAA Coral Reef Watch. 2018. Daily Global 5km Satellite Sea Surface Temperature Anomaly. Version 3.1, released August 1, 2018. | [Link](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php) |

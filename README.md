@@ -1,2 +1,3 @@
-# UCSB-EDS-220-Fisheries-Habitat-Suitability
-Creation of a generalized function that outputs habitat suitability based on temperature and depth range of given species.
+# California Fisheries Habitat Suitability Map
+
+This project features the creation of a function that creates a map for the habitat suitability of a user specified species.
