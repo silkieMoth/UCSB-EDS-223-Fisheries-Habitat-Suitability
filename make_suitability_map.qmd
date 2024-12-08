@@ -14,11 +14,11 @@ theme:
 
 This .qmd contains all code to create the function, as well as use it. You can use this to create your own habitat suitability map and save it as a .png. Please see the documentation in `habitat_suitability_function.html` for more information.
 
-The data used in the creation of this function include:
+The function is dependent on these datasets:
 
--   Sea surface temperature from NOAA
--   Bathymetry from GEBCO
--   Exclusive economic zones from marineregions.org
+-   Sea surface temperature from NOAA.
+-   Bathymetry from GEBCO.
+-   Exclusive economic zones from marineregions.org.
 
 *See citations section for more information.*
 
@@ -56,9 +56,9 @@ crs(sst) <- 'epsg:4326'
 
 Operations performed:
 
--   Obtained mean of all SST rasters from 2008-2012
--   Converted SST from kelvin to celcius
--   Cropped and resampled the depth raster to match the SST raster in depth and resolution
+-   Obtained mean of all SST rasters from 2008-2012.
+-   Converted SST from kelvin to Celsius.
+-   Cropped and re-sampled the depth raster to match the SST raster in depth and resolution.
 
 ```{r}
 #| code-fold: true
@@ -325,7 +325,7 @@ tmap_save(your_map, 'eez_suitability_map.png')
 ## Data Citations
 
 | Data | Citation | Link |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | OpenStreetMap from Geofabrik | Fellows I, Stotz utJlbJP (2023). *OpenStreetMap: Access to Open Street Map Raster Images*. R package version 0.4.0, https://CRAN.R-project.org/package=OpenStreetMap | [Link](https://www.openstreetmap.org) |
 | Pacific Geoduck page on SeaLifeBase | Pacific Northwest Shell Club 2014 Pacific Northwest marine molluscan biodiversity. Pacific Northwest Shell Club, www.PNWCS.org. http://www.bily.com/pnwsc/web-content/Northwest%20Marine%20Molluscan%20Biodiversity.html \[Accessed 06/02/2014\]. | [Link](https://www.sealifebase.ca/summary/Panopea-generosa.html) |
 | NOAA’s 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1. | NOAA Coral Reef Watch. 2018. Daily Global 5km Satellite Sea Surface Temperature Anomaly. Version 3.1, released August 1, 2018. | [Link](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php) |
