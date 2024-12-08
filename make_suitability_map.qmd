@@ -325,7 +325,7 @@ tmap_save(your_map, 'eez_suitability_map.png')
 ## Data Citations
 
 | Data | Citation | Link |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | OpenStreetMap from Geofabrik | Fellows I, Stotz utJlbJP (2023). *OpenStreetMap: Access to Open Street Map Raster Images*. R package version 0.4.0, https://CRAN.R-project.org/package=OpenStreetMap | [Link](https://www.openstreetmap.org) |
 | Pacific Geoduck page on SeaLifeBase | Pacific Northwest Shell Club 2014 Pacific Northwest marine molluscan biodiversity. Pacific Northwest Shell Club, www.PNWCS.org. http://www.bily.com/pnwsc/web-content/Northwest%20Marine%20Molluscan%20Biodiversity.html \[Accessed 06/02/2014\]. | [Link](https://www.sealifebase.ca/summary/Panopea-generosa.html) |
 | NOAA’s 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1. | NOAA Coral Reef Watch. 2018. Daily Global 5km Satellite Sea Surface Temperature Anomaly. Version 3.1, released August 1, 2018. | [Link](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php) |
