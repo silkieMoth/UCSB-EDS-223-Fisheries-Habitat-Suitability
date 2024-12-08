@@ -1,6 +1,14 @@
+# Base R files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Data folder
 data/
+
+# Render of README.md
 README.html
+
+# Output of the function
+eez_suitability_map.png
