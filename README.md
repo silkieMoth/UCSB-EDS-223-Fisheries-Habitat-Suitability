@@ -36,6 +36,7 @@ UCSB-EDS-220-Fisheries-Habitat-Suitability
 ```
 
 ## Data Access
+The data needed for this analysis is not stored in the repository. The datasets can be loaded from their own respective sources.
 
 -   The `average_annual_sst` GeoTIFFs are pre-processed rasters that were derived from NOAA’s 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1 project. The original data can be accessed from [NOAA Coral Reef Watch's library of 5km satellite data](https://coralreefwatch.noaa.gov/product/5km/index.php).
 -   `depth.tif` is directly accessible from the [GEBCO's Gridded Bathymetry Data](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#area) webpage.
